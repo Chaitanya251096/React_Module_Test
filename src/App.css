@@ -1,38 +1,724 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.pcview{
+  
+  display: block;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainDisplay{
+  width:100vw;
+  height: 100vh; 
+  display: flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.popMast{
+  display: flex;
+  align-items: center;
   }
+
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.479); 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.popup{
+  width: 500px;
+  height: 100px;
+  background-color: 
+  #FFFFFF ;
+  display: flex;
+  position: fixed;
+}
+.popmain{
+  width: 100vw;
+  height: 100vh;
+  background-color:rgb(47, 47, 47,0.75);;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+
+
+.popup-In{
+  width: 300px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ margin-left: 100px;
+ font-weight: 800;
+ letter-spacing: 1px;
+
+
+  
+  
+}
+.gr_cr_in{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  outline: none;
+
+}
+
+.heading{
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  font-size: larger;
+}
+.para{
+  font-size: 20px;  
+  font-weight: 100;
+}
+
+.mainDisplay{
+  display: flex;
+}
+.left{
+  width: 30vw;
+  height: 100vh;
+  display: flex;
+  background-color:#8bd5f594;
+  flex-direction: column;
+}
+
+.btn_create{
+  width: 250px;
+  height: 40px;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+
+}
+
+.displaydiv{
+  
+  overflow: auto;
+  margin-top: 10px;
+  height: 80vh;
+  margin-left: 50px;
+}
+
+.noteindex{
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  align-items: center;
+  margin: 10px;
+  font-weight: bolder;
+  background-color:#F7ECDC;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+.note_div{
+  width: 300px;
+}
+
+.rightmain{
+  width: 70vw;
+  height: 100vh;
+}
+.image{
+  display:flex ;
+  width: 70vw;
+  height:43vh;
+  background-image: url("C:\Users\ACER\Desktop\NotesApp\mynotes\src\images\image-removebg-preview 1.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: contain;
+}
+.right_ori_pop{
+  position: fixed;
+}
+png
+.right{
+  
+  width: 70vw;
+  height: 100vh;
+  background-color: #F7ECDC;
+  display: flex;
+  flex-direction: column; 
+}
+
+.lastline{
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+}
+.lock{
+  width: 20px;
+  height: 20px;
+  margin-right: 2px;
+  background-image: url("C:\Users\ACER\Desktop\NotesApp\mynotes\src\images\Vectorlock.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.right_ori{
+  width: 70vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:  #F7ECDC;
+}
+.home_con{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.noteMakemain{
+  display: flex;
+  align-items: center;
+  width: 70vw;
+  height: 40vh;
+  margin-right: 100px;
+  background-color: #E8E8E8;
+  position: static;
+}
+.inputText{
+ 
+  width: 60vw;
+  height: 28vh;
+  background-color: white;
+  margin-left: 70px;
+  border-radius: 20px;
+}
+.noteheader{
+  width: 70vw;
+  height: 50px;
+  background-color: #E8E8E8;
+}
+.noteheading{
+  width: 400px;
+  height: 50px;
+  margin-left: 25px;
+  font-size: 35px;
+}
+.notesdisplay{
+  overflow: auto;
+  justify-content: center;
+  margin-top: 30px;
+  width: 70vw;
+  height: 55vh;
+  background-color:#F7ECDC;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+.notecontent{
+  overflow: auto;
+  font-size: medium;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 100px;
+  margin-left: 20px;
+  resize: none;
+  margin: 5px;
+  color: black;
+  border: none;
+  background-color: #F7ECDC;
+
+}
+
+.updated{
+  font-size: 15px;
+  border: none;
+  font-weight: 400; 
+  margin: 8px;
+  font-size: medium;
+  font-weight: 800;
+}
+
+
+
+
+.notelist{
+  display: flex;
+  justify-content: start;
+  margin-left: 50px;
+  font-size: medium;
+  font-weight: 800;
+}
+
+
+.inputmain{
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  margin: 5px;
+}
+
+.titlein{
+  width: 500px;
+}
+
+
+.notearea{
+  width: 700px;
+  height: 100px;
+  resize: none;
+  margin-top: 25px;
+  margin-left: 65px;
+  font-size: medium;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  outline: none;
+ 
+}
+
+.addnote_1{
+
+  border: none;
+  width: 50px;
+  height: 40px;
+  background-image: url("C:\Users\ACER\Desktop\NotesApp\mynotes\src\images\Vector.png");
+ background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 700px; 
+  outline: none;
+  background-color:white;
+}
+
+.l_noteapp_head{
+  height:85px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background-color: #E8E8E8;
+}
+
+.btn_create-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 60px;
+}
+/* 
+
+
+
+
+
+
+
+z
+MOBILE VIEW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+.mobileView{
+  display:none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+ 
+}
+.ori_pop{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.466);
+  
+}
+
+.popMast{
+  display: flex;
+  align-items: center;
+ }
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.479); 
+}
+
+.popup1{
+  width: 350px;
+  height: 100px;
+  background-color: 
+  #FFFFFF ;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+}
+.popmain1{
+  width: 100vw;
+  height: 100vh;
+  background-color:rgb(47, 47, 47,0.75);;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+
+
+
+.popup-In1{
+  width: 300px;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ font-weight: 800;
+ letter-spacing: 1px;
+ font-family: 'Roboto', sans-serif;
+
+  
+  
+}
+.gr_cr_in{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  outline: none;
+ }
+
+.heading{
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  font-size: larger;
+}
+.para{
+  font-size: 20px;  
+  font-weight: 100;
+}
+
+/* .mainDisplay{
+  display: flex;
+} */
+/* .left{
+  width: 30vw;
+  height: 100vh;
+  display: flex;
+  background-color:#8bd5f594;
+  flex-direction: column;
+} */
+
+.btn_create1{
+  width: 250px;
+  height: 40px;
+  font-size: large;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+
+}
+
+.displaydiv1{
+  
+  overflow: auto;
+  margin-top: 10px;
+  height: 80vh;
+ }
+
+.noteindex1{
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bolder;
+  align-items: center;
+  margin: 10px;
+  font-family: 'Roboto', sans-serif;
+ background-color:#F7ECDC;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+.note_div{
+  width: 300px;
+}
+
+.rightmain{
+  width: 70vw;
+  height: 100vh;
+ 
+  
+
+}
+
+.right_ori_pop1{
+  position: fixed;
+
+}
+
+.right1{
+
+  width: 100vw;
+  height: 100vh;
+   
+  background-color: #F7ECDC;
+  display: flex;
+  flex-direction: column; 
+  
+}
+
+
+
+
+.right_ori1{
+  width: 100vw;
+  height: 100vh;
+  background-color: #8bd5f594;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.home_con{display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+.noteMakemain1{
+  display: flex;
+  align-items: center;
+  width:100vw;
+  height: 40vh;
+  margin-right: 100px;
+  background-color: #E8E8E8;
+  position: static;
+}
+.inputText1{
+ 
+  width: 95vw;
+  height: 25vh;
+  background-color: white;
+  margin-left: 9px;
+  border-radius: 20px;
+}
+.noteheader1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  height: 70px;
+  background-color: #E8E8E8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.back_btn{
+background-image: url("C:\Users\ACER\Desktop\NotesApp\mynotes\src\images\back-arrow.png");
+background-size: contain;
+background-repeat: no-repeat;
+background-color: #E8E8E8;
+width: 50px;
+height: 40px;
+border: none;
+outline: none;
+margin-top: 10px;
+}
+.noteheading1{
+  width: 400px;
+  height: 50px;
+  margin: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  margin-top: 15px;
+}
+.notesdisplay1{
+  overflow: auto;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100vw;
+  height: 55vh;
+  background-color:#F7ECDC;
+}
+
+.notecontent1{
+  width: 200px;
+  height: 100px;
+  font-size: medium;
+  font-weight: 800;
+  
+  
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin-left: 20px;
+  resize: none;
+  margin: 5px;
+  color: black;
+  
+  
+  border: none;
+  background-color: #F7ECDC;
+  overflow: auto;
+
+}
+
+.updated1{
+  width: 100px;
+  font-size: 15px;
+  border: none;
+  font-weight: 400; 
+  margin: 8px;
+  font-size: medium;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.notelistmain1{
+  width: 100vw;
+  
+}
+
+
+.notelist1{
+  display: flex;
+  justify-content: start;
+  margin-left: 50px;
+  font-size: medium;
+  font-weight: 800;
+  
+
+}
+
+
+.inputmain1{
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  margin: 5px;
+}
+
+.titlein{
+  width: 500px;
+}
+
+.addnote1{
+  margin-left: 300px;
+  background-color:white;
+}
+
+
+
+.notearea1{
+  width:300px;
+  height: 100px;
+  resize: none;
+  margin-top: 25px;
+  margin-left: 20px;
+  font-size: medium;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  outline: none;
+ 
+}
+
+.addnote1_1{
+
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-image: url("C:\Users\ACER\Desktop\NotesApp\mynotes\src\images\Vector.png");
+ background-repeat: no-repeat;
+  background-size: contain;
+  outline: none;
+ background-color:white;
+  
+ 
+}
+.btn_grp{
+  width: 50px;
+  height: 50px;
+}
+
+.l_noteapp_head1{
+  width: 350px;
+  height:95px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  background-color: #E8E8E8;
+  font-family:'Roboto', sans-serif;
+}
+
+.btn_create-div1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+}
+
+
+@media screen and (min-width:0px) and (max-width:600px){
+  .mainDisplay {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .mobileView{
+    display: flex; 
   }
 }
