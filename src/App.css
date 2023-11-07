@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-.pcview{
-  
-  display: block;
-  
+body{
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
 }
+
+
 
 .mainDisplay{
   width:100vw;
   height: 100vh; 
   display: flex;
+  flex-direction: row;
   display: none;
   justify-content: center;
   align-items: center;
   font-family: 'Roboto', sans-serif;
+  background-color: #F7ECDC;
  
 }
 
@@ -191,7 +195,7 @@ png
   align-items: center;
   width: 70vw;
   height: 40vh;
-  margin-right: 100px;
+  /* margin-right: 100px; */
   background-color: #E8E8E8;
   position: static;
 }
@@ -202,11 +206,14 @@ png
   background-color: white;
   margin-left: 70px;
   border-radius: 20px;
+  margin-bottom: 25px;
 }
 .noteheader{
   width: 70vw;
   height: 50px;
   background-color: #E8E8E8;
+  /* padding: 5px; */
+  margin-bottom: 15px;
 }
 .noteheading{
   width: 400px;
@@ -217,7 +224,7 @@ png
 .notesdisplay{
   overflow: auto;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 05px;
   width: 70vw;
   height: 55vh;
   background-color:#F7ECDC;
@@ -257,7 +264,7 @@ png
 
 .notelist{
   display: flex;
-  justify-content: start;
+  justify-content: center;
   margin-left: 50px;
   font-size: medium;
   font-weight: 800;
@@ -632,7 +639,7 @@ margin-top: 10px;
 
 .notelist1{
   display: flex;
-  justify-content: start;
+  justify-content: center;
   margin-left: 50px;
   font-size: medium;
   font-weight: 800;
