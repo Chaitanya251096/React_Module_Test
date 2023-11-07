@@ -147,7 +147,6 @@ const NotesApp = () => {
           <div>
             {selectedGroup && (
               <div className="right">
-                {/* <img src="C:\Users\ACER\Desktop\New folder (4)\mynotes\src\images\image-removebg-preview 1.png" alt="" /> */}
                 {/* Display Notes for the Selected Group */}
                 {selectedGroup && (
                   <div className="noteheader">
@@ -226,7 +225,6 @@ const NotesApp = () => {
                         className="gr_cr_in"
                         type="text"
                         placeholder="Enter group name"
-                        // onBlur={() => setShowCreateGroupPopup(false)}
                         onClick={(e) => createGroup(e.target.value)}
                         onKeyDown={(e) =>
                           e.key === "Enter" && createGroup(e.target.value)
@@ -275,7 +273,6 @@ const NotesApp = () => {
             <div>
               {selectedGroup && (
                 <div className="right1">
-                  {/* <img src="C:\Users\ACER\Desktop\New folder (4)\mynotes\src\images\image-removebg-preview 1.png" alt="" /> */}
                   {/* Display Notes for the Selected Group */}
                   {selectedGroup && (
                     <div className="noteheader1">
